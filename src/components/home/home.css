@@ -1,0 +1,141 @@
+.home {
+    height: 100vh;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+
+.home-container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    backdrop-filter: blur(6px);
+    border-radius: 1rem;
+    padding: 2rem;
+
+}
+
+
+
+.btns {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 2.5rem;
+    justify-content: center;
+}
+
+
+.home-container h4 {
+    font-size: 1.5rem;
+    color: var(--color-beige);
+}
+
+.home-container h1 {
+    background: linear-gradient(to right,
+            #ad842c 20%,
+
+            #cfb23c 50%,
+
+            #ad842c 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}
+
+
+
+.home-container .me {
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(var(--color-primary), transparent);
+
+    border-radius: 30rem 30rem 0 0;
+    margin: 40px auto;
+    padding: 0.5rem 0.1rem 1.5rem 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+
+}
+
+
+.scroll_down {
+    position: absolute;
+    right: -35px;
+    bottom: 80px;
+    transform: rotate(90deg);
+    font-weight: 300;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.scroll_down:hover {
+    color: var(--color-beige);
+
+}
+
+.home_socials {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    bottom: 50px;
+    position: absolute;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.home_socials::after {
+
+    background: var(--color-primary);
+
+}
+
+.home_socials a {
+    font-size: 25px;
+    color: var(--color-beige);
+    transition: var(--transition);
+}
+
+.home_socials a:hover {
+    color: var(--color-primary);
+    padding: 1rem;
+    backdrop-filter: blur(4px);
+}
+
+/* Responsive*/
+@media (max-width:1024px) {
+    .home {
+        height: 68vh;
+    }
+
+}
+
+@media (max-width:600px) {
+    .home {
+        height: auto;
+        padding-top: 5rem;
+
+
+    }
+
+    .home_socials,
+    .scroll_down {
+        display: none;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home-container .me {
+        max-width: 100%;
+        width: 300px;
+        height: 380px;
+    }
+
+}
