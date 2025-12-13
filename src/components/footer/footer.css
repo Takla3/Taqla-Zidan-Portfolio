@@ -16,7 +16,13 @@ footer a {
     font-weight: 500;
     margin-bottom: 30px;
     display: inline-block;
-    background: var(--color-orange);
+
+    background: linear-gradient(to right,
+            var(--color-orange) 10%,
+
+            var(--color-orange-gradiant) 50%,
+
+            var(--color-orange) 100%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
