@@ -17,8 +17,8 @@
     --color-primary-variant: rgba(76, 179, 107, 0.4);
     --color-white: #F5F7F4;
     --color-orange: #E67E22;
-    --color-beige: #EBD5AB;
-    --color-light: rgba(245, 247, 244, 0.65);
+    --color-green: #EBD5AB;
+    --color-dark: rgba(245, 247, 244, 0.65);
     --transition: all 0.4s ease;
     --container-width-lg: 80%;
     --container-width-md: 86%;
@@ -31,10 +31,10 @@
     --color-bg-variant: rgba(143, 181, 148, 0.6);
     --color-primary: #9ba582;
     --color-primary-variant: rgba(76, 179, 107, 0.4);
-    --color-white: rgba(27, 35, 23, 0.65);
-    --color-orange: #a88b23;
-    --color-beige: #344F1F;
-    --color-light: rgba(27, 35, 23, 0.65);
+    --color-orange: #ad842c;
+    --color-orange-gradiant: #cfb23c;
+    --color-green: #344F1F;
+    --color-dark: rgba(27, 35, 23, 0.65);
     --transition: all 0.4s ease;
     --container-width-lg: 80%;
     --container-width-md: 86%;
@@ -56,7 +56,7 @@ body {
         );
     line-height: 1.7;
     /* background-image: url(assets/bg-texture.png); */
-    color: var(--color-white);
+    color: var(--color-dark);
 
 }
 
@@ -97,7 +97,7 @@ h2 {
 
 h2,
 h3 {
-    color: var(--color-white);
+    color: var(--color-dark);
 }
 
 h1,
@@ -121,7 +121,7 @@ section:first-of-type {
 }
 
 .text-light {
-    color: var(--color-light);
+    color: var(--color-dark);
 }
 
 a {
@@ -130,7 +130,7 @@ a {
 }
 
 a:hover {
-    color: var(--color-white);
+    color: var(--color-dark);
 }
 
 .btn {
@@ -149,7 +149,7 @@ a:hover {
 
 
 .btn:hover {
-    background: var(--color-beige);
+    background: var(--color-green);
     color: var(--color-bg);
     box-shadow: 0 4px 20px rgba(98, 129, 65, 0.35);
     transition: var(--transition), box-shadow 0.3s ease-in-out;
@@ -161,7 +161,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background: var(--color-beige);
+    background: var(--color-green);
     color: var(--color-bg);
     box-shadow: 0 4px 20px rgba(98, 129, 65, 0.35);
     transition: var(--transition), box-shadow 0.3s ease-in-out;
@@ -183,7 +183,7 @@ img {
 
 .top_section h5 {
     text-align: center;
-    color: var(--color-light);
+    color: var(--color-dark);
 
 }
 

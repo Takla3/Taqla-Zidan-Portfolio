@@ -19,7 +19,7 @@
 }
 
 .portfolio_item_btns a {
-    color: var(--color-light);
+    color: var(--color-dark);
 
     background-color: var(--color-bg);
 
@@ -34,13 +34,13 @@
 
 .portfolio_item h2 {
     margin: 22px 0 35px;
-    color: var(--color-beige);
+    color: var(--color-green);
 
 }
 
 .portfolio_item h3 {
     margin: 2rem 0 2.6rem;
-    color: var(--color-light);
+    color: var(--color-dark);
 }
 
 

@@ -27,16 +27,16 @@
 
 .home-container h4 {
     font-size: 1.5rem;
-    color: var(--color-beige);
+    color: var(--color-green);
 }
 
 .home-container h1 {
     background: linear-gradient(to right,
-            #ad842c 20%,
+            var(--color-orange) 20%,
 
-            #cfb23c 50%,
+            var(--color-orange-gradiant) 50%,
 
-            #ad842c 100%);
+            var(--color-orange) 100%);
 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -75,7 +75,7 @@
 }
 
 .scroll_down:hover {
-    color: var(--color-beige);
+    color: var(--color-green);
 
 }
 
@@ -97,7 +97,7 @@
 
 .home_socials a {
     font-size: 25px;
-    color: var(--color-beige);
+    color: var(--color-green);
     transition: var(--transition);
 }
 

@@ -26,7 +26,7 @@
 }
 
 .contact_option a {
-    color: var(--color-light);
+    color: var(--color-dark);
 }
 
 .contact_option a:hover {
@@ -54,7 +54,7 @@
     margin: 0;
     font-size: 0.85rem;
     font-weight: normal;
-    color: var(--color-light);
+    color: var(--color-dark);
 
 }
 
@@ -72,7 +72,7 @@
     background: transparent;
     border: 2px solid var(--color-primary-variant);
     resize: none;
-    color: var(--color-white);
+    color: var(--color-dark);
 }
 
 .contact_container form button {
@@ -88,7 +88,7 @@
 } */
 /* نص داخل الـ toast */
 .custom-toast-body {
-    color: var(--color-white);
+    color: var(--color-dark);
     font-size: 0.95rem;
     font-weight: 500;
     text-align: center;

@@ -5,6 +5,14 @@
 
 }
 
+.top_section h2 {
+    background: linear-gradient(90deg, var(--color-orange) 0%, var(--color-orange-gradiant) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
 .about_me {
     width: 100%;
     aspect-ratio: 1/1;
@@ -15,11 +23,14 @@
 }
 
 .about_content h2 {
-    color: var(--color-orange);
+    background: linear-gradient(90deg, var(--color-orange) 50%, var(--color-orange-gradiant) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .about_content h1 {
-    color: var(--color-beige);
+    color: var(--color-green);
 }
 
 .about_me_image {
@@ -36,7 +47,7 @@
 
 .about_content p {
     margin: 2rem 0 2.6rem;
-    color: var(--color-light);
+    color: var(--color-dark);
     line-height: 1.8;
 
 }
