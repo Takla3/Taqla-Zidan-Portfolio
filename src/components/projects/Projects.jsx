@@ -54,7 +54,7 @@ const portfolioData =
 function Projects() {
     return (
         <section className="projects" id='projects'>
-            <div className="top_section">
+            <div className="top_section projects_title">
                 <h5>My Recent Work</h5>
                 <h2>Portfolio</h2>
             </div>

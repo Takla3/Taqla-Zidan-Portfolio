@@ -12,17 +12,29 @@
 }
 
 .contact_option {
-    background: linear-gradient(135deg, var(--color-bg-variant), var(--color-primary));
+    background: linear-gradient(200deg, var(--color-primary), var(--color-bg-variant));
     padding: 1.2rem;
-    border-radius: 1.2rem;
+    border-radius: 1.4rem;
     text-align: center;
-    border: 1px solid transparent;
+    border: 1px solid var(--color-primary);
     transition: var(--transition);
 
     display: flex;
     align-items: center;
     gap: 1rem;
     text-align: left;
+}
+
+.top_section {
+    text-align: center;
+}
+
+.top_section h2 {
+    display: inline-block;
+    background: linear-gradient(6000deg, var(--color-orange) 50%, var(--color-orange-gradiant) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .contact_option a {
@@ -70,7 +82,7 @@
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border: 2px solid var(--color-green);
     resize: none;
     color: var(--color-dark);
 }
@@ -78,7 +90,7 @@
 .contact_container form button {
     font-size: 18px;
     padding: 14px 30px;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-bg-variant));
+    background: linear-gradient(150deg, var(--color-primary) 50%, var(--color-bg-variant));
 }
 
 /* .success_message {

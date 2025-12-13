@@ -38,9 +38,25 @@
 
 }
 
+.projects_title {
+    text-align: center;
+}
+
+.projects_title h2 {
+    display: inline-block;
+    background: linear-gradient(90deg, var(--color-orange) 0%, var(--color-orange-gradiant) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
 .portfolio_item h2 {
     margin: 22px 0 35px;
-    color: var(--color-green);
+    background: linear-gradient(6000deg, var(--color-orange) 50%, var(--color-orange-gradiant) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 
 }
 

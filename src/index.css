@@ -9,22 +9,22 @@
 
 }
 
-/* :root {
-    --color-bg: #1B211A;
+body.dark {
+    --color-bg: #233221;
     --color-bg-gradiant: #2f3d20;
-    --color-bg-variant: rgba(105, 121, 107, 0.6);
-    --color-primary: #b4c095;
+    --color-bg-variant: rgba(255, 255, 255, 0.08);
+    --color-primary: #9ba582;
     --color-primary-variant: rgba(76, 179, 107, 0.4);
-    --color-white: #F5F7F4;
-    --color-orange: #E67E22;
-    --color-green: #EBD5AB;
-    --color-dark: rgba(245, 247, 244, 0.65);
+    --color-orange: #af9631;
+    --color-orange-gradiant: #cfb680;
+    --color-green: #9fb28f;
+    --color-dark: #F5F7F4;
     --transition: all 0.4s ease;
     --container-width-lg: 80%;
     --container-width-md: 86%;
     --container-width-ms: 90%;
+}
 
-} */
 :root {
     --color-bg: #F9F5F0;
     --color-bg-gradiant: #f2e7c5;
@@ -34,7 +34,7 @@
     --color-orange: #ad842c;
     --color-orange-gradiant: #cfb23c;
     --color-green: #344F1F;
-    --color-dark: rgba(27, 35, 23, 0.65);
+    --color-dark: #1b2317a6;
     --transition: all 0.4s ease;
     --container-width-lg: 80%;
     --container-width-md: 86%;
@@ -58,6 +58,10 @@ body {
     /* background-image: url(assets/bg-texture.png); */
     color: var(--color-dark);
 
+}
+
+body.dark .card:hover {
+    background: rgba(255, 255, 255, 0.12);
 }
 
 html {
@@ -95,7 +99,7 @@ h2 {
     letter-spacing: 0.5px;
 }
 
-h2,
+
 h3 {
     color: var(--color-dark);
 }
@@ -149,7 +153,7 @@ a:hover {
 
 
 .btn:hover {
-    background: linear-gradient(6000deg, var(--color-green), var(--color-primary));
+    background: linear-gradient(6000deg, var(--color-dark), var(--color-primary));
     color: var(--color-bg);
     box-shadow: 0 4px 20px rgba(98, 129, 65, 0.35);
     transition: var(--transition), box-shadow 0.3s ease-in-out;
@@ -161,7 +165,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background: linear-gradient(200deg, var(--color-green), var(--color-primary));
+    background: linear-gradient(200deg, var(--color-dark), var(--color-primary));
     color: var(--color-bg);
     box-shadow: 0 4px 20px rgba(98, 129, 65, 0.35);
     transition: var(--transition), box-shadow 0.3s ease-in-out;
@@ -177,8 +181,8 @@ img {
 
 .top_section h2 {
     text-align: center;
-    color: var(--color-primary);
     margin-bottom: 3rem;
+
 }
 
 .top_section h5 {

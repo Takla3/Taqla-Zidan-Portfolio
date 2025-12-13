@@ -15,6 +15,36 @@
 
 }
 
+.gradient-name {
+    display: inline-block;
+
+
+    background: linear-gradient(90deg,
+            var(--color-orange) 0%,
+            var(--color-orange-gradiant) 50%,
+            var(--color-orange) 100%);
+
+    background-size: 200% auto;
+    background-position: 0% center;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    animation: shine 4s linear infinite;
+}
+
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
 
 .btns {
     display: flex;
@@ -24,7 +54,7 @@
 }
 
 .btn-primary {
-    background: linear-gradient(90deg, var(--color-bg-variant), var(--color-primary));
+    background: linear-gradient(140deg, var(--color-primary-variant), var(--color-primary));
     color: var(--color-bg);
     border: none;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -34,23 +64,6 @@
 .home-container h4 {
     font-size: 1.5rem;
     color: var(--color-green);
-}
-
-.home-container h1 {
-    background: linear-gradient(to right,
-            var(--color-orange) 20%,
-
-            var(--color-orange-gradiant) 50%,
-
-            var(--color-orange) 100%);
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-
-    font-weight: 700;
-    letter-spacing: 1px;
-
 }
 
 
@@ -80,11 +93,6 @@
     transition: var(--transition);
 }
 
-.scroll_down:hover {
-    color: var(--color-green);
-
-}
-
 .home_socials {
     display: flex;
     flex-direction: column;
@@ -109,10 +117,12 @@
 }
 
 .home_socials a:hover {
-    color: var(--color-primary);
+    color: var(--color-dark);
     padding: 1rem;
     backdrop-filter: blur(4px);
 }
+
+
 
 /* Responsive*/
 @media (max-width:1024px) {

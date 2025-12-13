@@ -6,6 +6,13 @@
 
 }
 
+.top_section h2 {
+    background: linear-gradient(6000deg, var(--color-orange) 50%, var(--color-orange-gradiant) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .container_services .card {
     width: 30%;
     padding: 50px 40px;
@@ -30,8 +37,17 @@
     box-shadow: 0 8px 20px rgba(98, 129, 65, 0.35);
     border-color: var(--color-primary);
     background: rgba(180, 192, 149, 0.1);
+    color: var(--color-orange);
 
 }
+
+.container_services .card:hover h3 {
+    background: linear-gradient(6000deg, var(--color-orange) 50%, var(--color-orange-gradiant) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 
 .container_services .icon {
     font-size: 70px;

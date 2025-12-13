@@ -1,0 +1,56 @@
+.theme-switch-wrapper {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+.theme-switch {
+    width: 55px;
+    height: 28px;
+    background: #b4c095;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    position: relative;
+    transition: background 0.4s ease;
+}
+
+.theme-switch .icon {
+    font-size: 14px;
+    z-index: 2;
+    transition: color 0.4s ease;
+}
+
+.theme-switch {
+    color: #f1c40f;
+}
+
+.theme-switch.light .moon {
+    color: #aaa;
+}
+
+.theme-switch.dark .sun {
+    color: #666;
+}
+
+.switch-circle {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.4s ease, background 0.4s ease;
+}
+
+
+.theme-switch.dark .switch-circle {
+    transform: translateX(26px);
+    background: #333;
+}

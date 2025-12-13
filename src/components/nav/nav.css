@@ -28,6 +28,6 @@ nav a:hover {
 }
 
 nav a.active {
-    background: var(--color-bg);
-    color: var(--color-dark);
+    background: #F9F5F0;
+    color: rgba(27, 35, 23, 0.65);
 }
