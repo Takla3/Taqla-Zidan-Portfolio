@@ -52,6 +52,10 @@
 
 }
 
+.about_content a {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-bg-variant));
+}
+
 /* media Query */
 
 @media (max-width:1024px) {

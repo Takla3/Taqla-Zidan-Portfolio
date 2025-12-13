@@ -16,7 +16,6 @@
 }
 
 
-
 .btns {
     display: flex;
     gap: 1.2rem;
@@ -24,6 +23,13 @@
     justify-content: center;
 }
 
+.btn-primary {
+    background: linear-gradient(90deg, var(--color-bg-variant), var(--color-primary));
+    color: var(--color-bg);
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
 
 .home-container h4 {
     font-size: 1.5rem;
@@ -99,6 +105,7 @@
     font-size: 25px;
     color: var(--color-green);
     transition: var(--transition);
+
 }
 
 .home_socials a:hover {
