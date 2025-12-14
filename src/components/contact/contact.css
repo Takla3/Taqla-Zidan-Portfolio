@@ -12,7 +12,7 @@
 }
 
 .contact_option {
-    background: linear-gradient(200deg, var(--color-primary), var(--color-bg-variant));
+    background: linear-gradient(180deg, var(--color-primary) 10%, var(--color-bg-variant));
     padding: 1.2rem;
     border-radius: 1.4rem;
     text-align: center;
@@ -31,7 +31,7 @@
 
 .top_section h2 {
     display: inline-block;
-    background: linear-gradient(6000deg, var(--color-orange) 50%, var(--color-orange-gradiant) 100%);
+    background: linear-gradient(135deg, var(--color-orange) 50%, var(--color-orange-gradiant) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -90,15 +90,10 @@
 .contact_container form button {
     font-size: 18px;
     padding: 14px 30px;
-    background: linear-gradient(150deg, var(--color-primary) 50%, var(--color-bg-variant));
+    background: var(--color-primary)
 }
 
-/* .success_message {
-    margin-top: 15px;
-    font-size: 1rem;
-    color: #4CAF50;
-    text-align: center;
-} */
+
 /* نص داخل الـ toast */
 .custom-toast-body {
     color: var(--color-dark);

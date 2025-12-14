@@ -23,7 +23,7 @@
 }
 
 .about_content h2 {
-    background: linear-gradient(6000deg, var(--color-orange) 50%, var(--color-orange-gradiant) 100%);
+    background: linear-gradient(135deg, var(--color-orange) 50%, var(--color-orange-gradiant) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

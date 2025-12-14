@@ -34,26 +34,25 @@ body.dark {
     --color-orange: #ad842c;
     --color-orange-gradiant: #cfb23c;
     --color-green: #344F1F;
-    --color-dark: #1b2317a6;
+    --color-dark: rgba(27, 35, 23, 0.65);
     --transition: all 0.4s ease;
     --container-width-lg: 80%;
     --container-width-md: 86%;
     --container-width-ms: 90%;
 
+    color-scheme: light dark;
 }
 
 body {
     font-family: "Poppins", sans-serif;
     background: var(--color-bg);
-    /* لون داكن أساسي */
+
     background: linear-gradient(180deg,
             var(--color-bg) 0%,
-            /* فوق */
+
             var(--color-bg-gradiant) 50%,
-            /* منتصف الغرادينت */
-            var(--color-bg) 100%
-            /* تحت */
-        );
+
+            var(--color-bg) 100%);
     line-height: 1.7;
     /* background-image: url(assets/bg-texture.png); */
     color: var(--color-dark);
@@ -141,7 +140,7 @@ a:hover {
     width: max-content;
     display: inline-block;
     padding: 0.75rem 1.2rem;
-    color: var(--color-primary);
+    color: var(--color-green);
     border-radius: 0.4rem;
     cursor: pointer;
     border: 1px solid var(--color-primary);
@@ -153,19 +152,19 @@ a:hover {
 
 
 .btn:hover {
-    background: linear-gradient(6000deg, var(--color-dark), var(--color-primary));
+    background: linear-gradient(135deg, var(--color-dark), var(--color-primary));
     color: var(--color-bg);
     box-shadow: 0 4px 20px rgba(98, 129, 65, 0.35);
     transition: var(--transition), box-shadow 0.3s ease-in-out;
 }
 
 .btn-primary {
-    background: linear-gradient(90deg, var(--color-bg-variant), var(--color-primary));
+    background: linear-gradient(135deg, var(--color-bg-variant), var(--color-green));
     color: var(--color-bg);
 }
 
 .btn-primary:hover {
-    background: linear-gradient(200deg, var(--color-dark), var(--color-primary));
+    background: linear-gradient(135deg, var(--color-dark), var(--color-primary));
     color: var(--color-bg);
     box-shadow: 0 4px 20px rgba(98, 129, 65, 0.35);
     transition: var(--transition), box-shadow 0.3s ease-in-out;
