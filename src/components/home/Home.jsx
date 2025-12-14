@@ -1,7 +1,7 @@
 import React from 'react'
 import Me from '../../assets/m.png'
 import './home.css'
-import CV from '../../assets/Taqla_Zidan_cv.pdf'
+import CV from '../../assets/Taqla_Zidan.pdf'
 import HomeSocials from './HomeSocials'
 import ThemeToggle from './ThemeToggle';
 function Home() {
