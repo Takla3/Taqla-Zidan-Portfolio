@@ -1,6 +1,5 @@
 .home {
     height: 100vh;
-    padding-top: 60px;
     overflow: hidden;
 }
 
@@ -11,7 +10,8 @@
     position: relative;
     backdrop-filter: blur(6px);
     border-radius: 1rem;
-    padding: 2rem;
+    overflow: hidden;
+    padding: 2rem 2rem 0 2rem;
 
 }
 
@@ -37,6 +37,7 @@
     letter-spacing: 1px;
 
     animation: shine 4s linear infinite;
+
 }
 
 
@@ -86,7 +87,7 @@
 .scroll_down {
     position: absolute;
     right: -35px;
-    bottom: 80px;
+    bottom: 150px;
     transform: rotate(90deg);
     font-weight: 300;
     color: var(--color-primary);
@@ -97,7 +98,7 @@
     display: flex;
     flex-direction: column;
     left: 0;
-    bottom: 50px;
+    bottom: 100px;
     position: absolute;
     gap: 0.8rem;
     align-items: center;
@@ -127,15 +128,24 @@
 /* Responsive*/
 @media (max-width:1024px) {
     .home {
-        height: 68vh;
+        height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .home-container {
+        height: auto;
+    }
+
+    .home-container .me {
+        margin: 20px auto;
     }
 
 }
 
 @media (max-width:600px) {
-    .home {
+    .home-container {
         height: auto;
-        padding-top: 5rem;
 
 
     }
@@ -145,7 +155,7 @@
         display: none;
     }
 
-    .home h1 {
+    .home-container h1 {
         font-size: 2rem;
     }
 
