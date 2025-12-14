@@ -6,6 +6,7 @@ import { LuUserRound } from "react-icons/lu";
 import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
+import { LuBrainCircuit } from "react-icons/lu";
 import { useState } from 'react';
 
 
@@ -15,10 +16,11 @@ function Nav({ activeNav, setActiveNav }) {
 
     return (
         <nav>
-            <a href="#" className={activeNav === "#" ? "active" : ""} onClick={() => setActiveNav('#')}><IoHomeOutline /></a>
+            <a href="#home" className={activeNav === "#home" ? "active" : ""} onClick={() => setActiveNav('#home')}><IoHomeOutline /></a>
             <a href="#about" className={activeNav === "#about" ? "active" : ""} onClick={() => setActiveNav('#about')}><LuUserRound /></a>
+            <a href="#skills" className={activeNav === "#skills" ? "active" : ""} onClick={() => setActiveNav('#skills')}><LuBrainCircuit /></a>
             <a href="#services" className={activeNav === "#services" ? "active" : ""} onClick={() => setActiveNav('#services')}><RiServiceLine /></a>
-            <a href="#projects" className={activeNav === "#portfolio" ? "active" : ""} onClick={() => setActiveNav('#portfolio')}><BiBook /></a>
+            <a href="#projects" className={activeNav === "#projects" ? "active" : ""} onClick={() => setActiveNav('#projects')}><BiBook /></a>
             <a href="#contact" className={activeNav === "#contact" ? "active" : ""} onClick={() => setActiveNav('#contact')}><BiMessageSquareDetail /></a>
         </nav>
     )

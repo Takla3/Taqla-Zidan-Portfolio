@@ -6,20 +6,39 @@ import Footer from './components/footer/Footer'
 import Projects from './components/projects/Projects'
 import Services from './components/services/Services'
 import Skills from './components/skills/Skills'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
 
 function App() {
 
   const [activeNav, setActiveNav] = useState("#");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveNav(`#${entry.target.id}`);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    sections.forEach(section => observer.observe(section));
+
+    return () => {
+      sections.forEach(section => observer.unobserve(section));
+    }
+  }, []);
   return (
     <>
       <Home setActiveNav={setActiveNav} />
-      <About />
-      <Skills />
-      <Services />
-      <Projects />
-      <Contact />
-      <Footer />
+      <About setActiveNav={setActiveNav} />
+      <Skills setActiveNav={setActiveNav} />
+      <Services setActiveNav={setActiveNav} />
+      <Projects setActiveNav={setActiveNav} />
+      <Contact setActiveNav={setActiveNav} />
+      <Footer setActiveNav={setActiveNav} />
       <Nav activeNav={activeNav} setActiveNav={setActiveNav} />
 
 

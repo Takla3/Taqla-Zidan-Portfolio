@@ -2,7 +2,7 @@ import React from 'react'
 import './about.css'
 import ImageMe from '../../assets/about/about-me.jpeg'
 
-function About() {
+function About({ setActiveNav }) {
     return (
         <section className="about" id="about">
             <div className="top_section">
@@ -29,7 +29,7 @@ function About() {
                         Eager to learn new technologies and frameworks,
                         I enjoy contributing to innovative projects that enhance user experience and drive business success.
                     </p>
-                    <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+                    <a href="#contact" className='btn btn-primary' onClick={() => setActiveNav('#contact')}>Let's Talk</a>
                 </div>
             </div>
         </section>
