@@ -6,21 +6,21 @@ import Footer from './components/footer/Footer'
 import Projects from './components/projects/Projects'
 import Services from './components/services/Services'
 import Skills from './components/skills/Skills'
-
+import { useState } from 'react';
 
 function App() {
 
-
+  const [activeNav, setActiveNav] = useState("#");
   return (
     <>
-      <Home />
+      <Home setActiveNav={setActiveNav} />
       <About />
       <Skills />
       <Services />
       <Projects />
       <Contact />
       <Footer />
-      <Nav />
+      <Nav activeNav={activeNav} setActiveNav={setActiveNav} />
 
 
     </>

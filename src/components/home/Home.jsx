@@ -4,7 +4,7 @@ import './home.css'
 import CV from '../../assets/Taqla_Zidan.pdf'
 import HomeSocials from './HomeSocials'
 import ThemeToggle from './ThemeToggle';
-function Home() {
+function Home({ setActiveNav }) {
     return (
         <div className='home'>
             <ThemeToggle />
@@ -21,7 +21,7 @@ function Home() {
                 <div className='me'>
                     <img src={Me} alt="" />
                 </div>
-                <a href='#about' className='scroll_down'>Scroll Down</a>
+                <a href='#about' className='scroll_down' onClick={() => setActiveNav('#about')}>Scroll Down</a>
                 <HomeSocials />
 
             </div>

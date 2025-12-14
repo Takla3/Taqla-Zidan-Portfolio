@@ -9,9 +9,9 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 import { useState } from 'react';
 
 
-function Nav() {
+function Nav({ activeNav, setActiveNav }) {
 
-    const [activeNav, setActiveNav] = useState("#")
+    // const [activeNav, setActiveNav] = useState("#")
 
     return (
         <nav>
