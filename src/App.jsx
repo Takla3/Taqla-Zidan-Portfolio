@@ -22,7 +22,7 @@ function App() {
           setActiveNav(`#${entry.target.id}`);
         }
       });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.1, rootMargin: "-50px 0px -50px 0px" }); // rootMargin يساعد على الرصد المبكر أو المتأخر
 
     sections.forEach(section => observer.observe(section));
 

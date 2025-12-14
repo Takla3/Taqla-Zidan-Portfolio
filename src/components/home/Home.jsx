@@ -1,7 +1,7 @@
 import React from 'react'
 import Me from '../../assets/m.png'
 import './home.css'
-import CV from '../../assets/Taqla_Zidan.pdf'
+import CV from '../../assets/Taqla_Zidan_cv.pdf'
 import HomeSocials from './HomeSocials'
 import ThemeToggle from './ThemeToggle';
 function Home({ setActiveNav }) {
@@ -16,7 +16,6 @@ function Home({ setActiveNav }) {
                     <div className='btns'>
                         <a href={CV} className='btn' download>Download CV</a>
                         <a href='#contact' className='btn btn-primary' onClick={() => setActiveNav('#contact')}>Let's Talk</a>
-
 
                     </div>
                     <div className='me'>
